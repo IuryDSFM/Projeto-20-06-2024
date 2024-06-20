@@ -1,0 +1,221 @@
+:root {
+    --verde: #009E00;
+    --azul: #102C57;
+
+}
+.bg_navbar {
+    background-image: url("../img/navbar1.jpg");
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu_hamb {
+    font-size: 34px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+.menu_hamb:hover {
+    color: rgba(255, 255, 255, 0.603);
+    transition: 0.3s;
+}
+
+.div_container {
+    height: 200px;
+    width: 70%;
+    background-color: red;
+}
+
+.section_br {
+    height: 250px;
+}
+
+.img_slide {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.img_campos {
+    background-image: url("../img/br/campos.jpeg");
+}
+
+.img_sp {
+    background-image: url("../img/br/sp.jpeg");
+}
+
+.img_rj {
+    background-image: url("../img/br/rj.jpeg");
+}
+
+.img_gramado {
+    background-image: url("../img/br/gramado.jpeg");
+}
+
+.img_ubatuba {
+    background-image: url("../img/br/ubatuba.jpeg");
+}
+
+.w-80 {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.section_procurados {
+    height: 300px;
+}
+
+.img_rj2 {
+    background-image: url("../img/procurados/rj2.jpeg");
+}
+
+.img_curitiba {
+    background-image: url("../img/procurados/curitiba.jpeg");
+}
+
+.img_bh {
+    background-image: url("../img/procurados/bh.jpeg");
+}
+
+.img_salvador {
+    background-image: url("../img/procurados/salvador.jpeg");
+}
+
+.img_minas {
+    background-image: url("../img/procurados/minas.jpeg");
+}
+
+.bg-verde {
+    background-color: var(--verde);
+}
+
+.bg-nav1 {
+    background-color: var(--azul);
+    width: 100%;
+    position: absolute;
+}
+
+.bg-azul {
+    background-color: var(--azul);
+}
+
+.text-verde {
+    color: var(--verde);
+}
+
+.text-azul {
+    color: var(--azul);
+}
+
+.btn_nav {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 80px;
+    transition: 0.3s;
+}
+
+.btn_nav:hover {
+    background-color: #008600;
+    color: rgb(241, 241, 241);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--verde);
+    transition: 0.3s;
+}
+
+.borda-login {
+    border: 1px solid black;
+}
+
+.btn_login {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--azul);
+    width: 80px;
+    transition: 0.3s;
+}
+
+.btn_login:hover {
+    background-color: #0d2344;
+    color: rgb(241, 241, 241);
+    transition: 0.3s;
+}
+
+/*RESULTADOS*/
+.container-fluid {
+    padding: 0;
+}
+
+.filtros h2 {
+    margin-top: 0;
+}
+
+#selecao-estado {
+    margin: 10px;
+}
+
+#aplicar-resultados {
+    margin-top: 25px;
+}
+
+.hotel-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-text {
+    margin-bottom: 8px;
+}
+
+.btn-block {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-link{
+    text-decoration: none;
+    color: white;
+}
+
+.text-link:visited{
+    color: white;
+}
+
+@media(min-width: 768px) {
+    .hotel-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width: 1200px) {
+    .hotel-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

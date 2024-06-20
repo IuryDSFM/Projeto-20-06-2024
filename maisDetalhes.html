@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Hotel</title>
+    <link rel="icon" type="image/x-icon" href="img/logo2.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/maisDetalhes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="bg-nav1 d-none d-md-block" style="height: 183px;">
+    </div>
+    <div class="bg-nav1 d-block d-md-none" style="height: 123px;">
+    </div>
+    <nav class="navbar navbar-expand-lg text-light">
+        <!--BOTÃO HAMBURGUER-->
+        <button class="menu_hamb position-absolute ms-3 d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="container-fluid px-5 ms-5">
+
+            <a class="navbar-brand text-light" href="index.html">
+                <img src="img/logo2.png" alt="logo" width="65px">
+            </a>
+            <span class="d-flex w-50 justify-content-evenly">
+                <li class="nav-item d-flex flex-column justify-content-center align-middle">
+                    <a class="d-none d-sm-block nav-link" href="anunciar_propriedade.html">Anuncie sua propriedade</a>
+                </li>
+
+                <button class="btn_nav d-none d-lg-block bg-verde rounded me-2 my-1">Cadastrar</button>
+
+                <button class="btn_nav d-none d-lg-block bg-verde rounded me-2 my-1"><a href="login.html" class="text-link">Login</a></button>
+
+                <span class="rounded-circle bg-verde text-center d-flex flex-column justify-content-center"
+                    style="height: 44px; width: 44px;">
+                    <i class="bi bi-person-fill" style="font-size: 25px;"></i>
+                </span>
+
+            </span>
+        </div>
+    </nav>
+    <!--CATEGORIAS-->
+    <div class="accordion d-none d-lg-block" id="accordionExample">
+        <div class="bg-verde">
+            <h2 class="accordion-header w-100 text-center position-absolute" id="headingOne">
+                <i id="bt_cat" class="bi bi-chevron-compact-down text-light" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                    onclick="bt_categorias()"></i>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse pt-2" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <nav class="navbar navbar-expand-lg text-light">
+                        <div class="container-fluid">
+                            <div class="justify-content-evenly d-none d-lg-flex w-100 ">
+                                <a class="nav-link" href="#">Hotel</a>
+                                <a class="nav-link" href="#">Pousada</a>
+                                <a class="nav-link" href="#">Albergue</a>
+                                <a class="nav-link text-center" href="#">Hotel Fazenda</a>
+                                <a class="nav-link" href="#">Resort</a>
+                                <a class="nav-link" href="#">Flat</a>
+                                <a class="nav-link text-center" href="#">Hotel Histórico</a>
+                                <a class="nav-link text-center" href="#">Cama e Café</a>
+                                <a class="nav-link text-center" href="#">Casas de Temporada</a>
+                                <a class="nav-link" href="#">Pensão</a>
+                                <a class="nav-link text-center" href="#">Guest House</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FUNÇÃO HAMBURGUER-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        <div class="offcanvas-body">
+            <a class="nav-link" href="#">Hotel</a>
+            <a class="nav-link" href="#">Pousada</a>
+            <a class="nav-link" href="#">Albergue</a>
+            <a class="nav-link" href="#">Hotel Fazenda</a>
+            <a class="nav-link" href="#">Resort</a>
+            <a class="nav-link" href="#">Flat</a>
+            <a class="nav-link" href="#">Hotel Histórico</a>
+            <a class="nav-link" href="#">Cama e Café</a>
+            <a class="nav-link" href="#">Casas de Temporada</a>
+            <a class="nav-link" href="#">Pensão</a>
+            <a class="nav-link" href="#">Guest House</a>
+            <a class="nav-link pt-5" href="#">Anuncie sua propriedade</a>
+        </div>
+    </div>
+    <br>
+    <!--ESPAÇO DA CATEGORIA-->
+    <div id="spaco_cat" style="height: 80px;"></div>
+    <div class="d-none d-sm-flex d-md-none my-3"></div>
+
+    <!--DETALHES-->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/hoteis/hotel-2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/hoteis/hotel-2.1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/hoteis/hotel-2.2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div><br>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/acomodacoes/quarto-1.jpeg" class="img-fluid rounded mb-2"
+                            alt="Imagem do quarto 1">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/acomodacoes/quarto-2.jpeg" class="img-fluid rounded mb-2"
+                            alt="Imagem do quarto 2">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/acomodacoes/quarto-3.jpeg" class="img-fluid rounded mb-2"
+                            alt="Imagem do quarto 3">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/acomodacoes/piscina.jpeg" class="img-fluid rounded mb-2" alt="Imagem da piscina">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/acomodacoes/academia.jpeg" class="img-fluid rounded mb-2"
+                            alt="Imagem da academia">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/acomodacoes/estacionamento.jpeg" class="img-fluid rounded mb-2"
+                            alt="Imagem do estacionamento">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Carioca´s Hotel</h2>
+                <p><strong>Localização:</strong> Rio de Janeiro, RJ, Brasil</p>
+                <p><strong>Preço:</strong> R$ 250,00 por noite</p>
+                <p>Esse hotel é prefeito para família. Apartamentos com dois dormitórios, uma cama de casal e duas de
+                    solteiro, banheira com hidromassagem e bidê </p>
+                <p><strong>Comodidades:</strong></p>
+                <ul>
+                    <li>Wi-Fi gratuito</li>
+                    <li>Café da manhã incluído</li>
+                    <li>Estacionamento gratuito</li>
+                    <li>Piscina</li>
+                    <li>Academia</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-block">Reservar</a>
+                <a href="index.html" class="btn btn-secondary btn-block">Voltar</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

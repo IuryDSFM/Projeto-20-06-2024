@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="img/logo2.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="aos-master/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main class="w-80">
+        <div class="text-center">
+            <a href="index.html">
+                <img src="img/logo.png" alt="" style="height:20vh" data-aos="fade-down">
+            </a>
+        </div>
+
+        <div class="row bg-azul justify-content-center rounded-3" style="height: 60vh;">
+            <div class="col-12 row my-auto">
+                <h2 class="text-center text-light" data-aos="fade-up" data-aos-duration="1000">Sua propriedade</h2>
+            </div>
+            <div class="col-12 row my-auto">
+                <div class="col-4">
+                    <select class="form-select form-select-sm" aria-label="Small select example">
+                        <option selected>Tipo de propriedade</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="pousada">Pousada</option>
+                        <option value="albergue">Albergue</option>
+                        <option value="hotel_fazenda">Hotel Fazenda</option>
+                        <option value="resort">Resort</option>
+                        <option value="flat">Flat</option>
+                        <option value="hotel_historico">Hotel Histórico</option>
+                        <option value="cama_e_cafe">Cama e Café</option>
+                        <option value="casas_de_temporada">Casas de Temporada</option>
+                        <option value="pensao">Pensão</option>
+                        <option value="guest_house">Guest House</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <select class="form-select form-select-sm" aria-label="Small select example">
+                        <option selected>País/região</option>
+                        <option value="">Afeganistão</option>
+                        <option value="">Albânia</option>
+                        <option value="">Alemanha</option>
+                        <option value="">Andorra</option>
+                        <option value="">Angola</option>
+                        <option value="">Anguilla</option>
+                        <option value="">Antártica</option>
+                        <option value="">Antígua e Barbuda</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argélia</option>
+                        <option value="">Armênia</option>
+                        <option value="">Aruba</option>
+                        <option value="">Arábia Saudita</option>
+                        <option value="">Austrália</option>
+                        <option value="">Azerbaijão</option>
+                        <option value="">Bahamas</option>
+                        <option value="">Bangladesh</option>
+                        <option value="">Barbados</option>
+                        <option value="">Barém</option>
+                        <option value="">Belize</option>
+                        <option value="">Benim</option>
+                        <option value="">Bermudas</option>
+                        <option value="">Bolívia</option>
+                        <option value="">Bonaire, S. Eustáquio e Saba</option>
+                        <option value="">Botsuana</option>
+                        <option value="">Brasil</option>
+                        <option value="">Brunei</option>
+                        <option value="">Bulgária</option>
+                        <option value="">Burquina Faso</option>
+                        <option value="">Burundi</option>
+                        <option value="">Butão</option>
+                        <option value="">Bélgica</option>
+                        <option value="">Bósnia e Herzegovina</option>
+                        <option value="">Cabo Verde</option>
+                        <option value="">Camarões</option>
+                        <option value="">Camboja</option>
+                        <option value="">Canadá</option>
+                        <option value="">Cazaquistão</option>
+                        <option value="">Chade</option>
+                        <option value="">Chile</option>
+                        <option value="">China</option>
+                        <option value="">Chipre</option>
+                        <option value="">Chipre do Norte</option>
+                        <option value="">Cidade do Vaticano</option>
+                        <option value="">Colômbia</option>
+                        <option value="">Congo</option>
+                        <option value="">Coreia do Sul</option>
+                        <option value="">Costa Rica</option>
+                        <option value="">Costa do Marfim</option>
+                        <option value="">Croácia</option>
+                        <option value="">Curaçao</option>
+                        <option value="">Dinamarca</option>
+                        <option value="">Dominica</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <select class="form-select form-select-sm" aria-label="Small select example">
+                        <option selected value="">Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="SP">Estado de São Paulo</option>
+                        <option value="RJ">Estado do Rio de Janeiro</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PA">Pará</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12 row my-auto">
+                <div class="col-6">
+                    <input type="cidade" class="form-control" placeholder="Cidade">
+                </div>
+                <div class="col-6">
+                    <input type="endereco" class="form-control" placeholder="Endereço">
+                </div>
+            </div>
+
+            <div class="col-12 row my-auto">
+                <div class="col-6">
+                    <input type="nome" class="form-control" placeholder="Nome da propriedade">
+                </div>
+                <div class="col-3">
+                    <input type="time" class="form-control">
+                </div>
+                <div class="col-3">
+                    <input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-12 row my-auto">
+                <div class="col-4">
+                    <input type="number" min="0" maxlength="2" class="form-control" placeholder="Adultos">
+                </div>
+                <div class="col-4">
+                    <input type="number" min="0" maxlength="2" class="form-control" placeholder="Crianças">
+                </div>
+                <div class="col-4">
+                    <input type="number" min="0" maxlength="2" class="form-control" placeholder="Quartos">
+                </div>
+            </div>
+            <div class="col-12 row my-auto justify-content-center">
+                <a href="index.html" class="btn btn-light text-link text-dark w-50">
+                    Cadastrar
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <br><br>
+
+    <footer class="mt-5 w-100 py-5 bg-dark text-light d-flex d-column">
+        <div class="col-6">
+            <div class="ps-5">
+                <h6 class="fw-bold ">Desenvolvedores</h6>
+                Iury dos Santos Freitas Mendes <br>
+                João Lucas de Oliveira Frutuoso
+            </div>
+
+
+        </div>
+
+        <div class="col-6 text-end">
+            <div class="pe-5">
+                <h6 class="fw-bold">Canais</h6>
+                <a href=""><i class="text-verde bi bi-discord"></i></a>
+                <a href=""><i class="text-verde bi bi-github"></i></a>
+                <a href=""><i class="text-verde bi bi-instagram"></i></a>
+                <a href=""><i class="text-verde bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

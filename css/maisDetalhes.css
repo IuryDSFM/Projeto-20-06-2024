@@ -1,0 +1,83 @@
+.bg_navbar {
+    background-image: url("../img/navbar1.jpg");
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu_hamb {
+    font-size: 34px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+.menu_hamb:hover {
+    color: rgba(255, 255, 255, 0.603);
+    transition: 0.3s;
+}
+/*MAIS DETALHES*/
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#col-4 img{
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+ 
+}
+
+.col-4:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+ul {
+    padding-left: 20px;
+}
+
+.btn-block {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mb-4 {
+    margin-bottom: 17px !important;
+}
+
+.mb-2 {
+    margin-bottom: 15px !important;
+}
